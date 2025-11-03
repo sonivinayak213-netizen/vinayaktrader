@@ -1,0 +1,1 @@
+export default function Topbar(){ return (<div className="flex items-center justify-between mb-6"><div className="flex items-center gap-4"><div className="text-sm">Live: Nifty 50 • VIX 18.5 • PCR 0.92</div></div><div className="text-sm text-muted">VT-2025-1103-01</div></div>) }

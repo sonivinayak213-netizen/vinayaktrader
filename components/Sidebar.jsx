@@ -1,0 +1,3 @@
+import Link from 'next/link'
+export default function Sidebar(){ const items = [['Dashboard','/'],['Fundamental','/fundamental'],['Technical','/technical'],['Swing Trading','/swing'],['Delivery','/delivery'],['VIX Dashboard','/vix'],['Options','/options'],['Mutual Fund / SIP','/mutualfund'],['Market Overview','/overview'],['AI Summary','/ai-summary']]
+  return (<aside className="w-64 p-4 border-r border-gray-800 h-screen fixed"><div className="mb-6"><div className="text-xl font-bold">VinayakTrader</div><div className="text-sm text-muted">Ref: VT-2025-1103-01</div></div><nav className="space-y-2">{items.map(([label,href])=>(<Link key={label} href={href}><a className="block p-2 rounded hover:bg-gray-900">{label}</a></Link>))}</nav></aside>) }
